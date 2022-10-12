@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="275dp"
+        android:layout_height="424dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="43dp"
+        app:srcCompat="@drawable/qrcode" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="43dp"
+        android:text="จำนวนเงินที่ต้องชำระทั้งหมด:     ฿"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="178dp"
+        android:text="           ธนาคารกสิกรไทย\n เลขที่บัญชี:\n ชื่อบัญชี:นาย.........."
+        android:textSize="20sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnsave"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="253dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="saveimg"
+        app:srcCompat="@drawable/dl" />
+
+    <Button
+        android:id="@+id/butnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:text="อัพโหลดหลักฐานการชำระเงิน" />
+
+    <TextView
+        android:id="@+id/bankno"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="203dp"
+        android:text="123-456-789"
+        android:textSize="20sp" />
+
+</RelativeLayout>
